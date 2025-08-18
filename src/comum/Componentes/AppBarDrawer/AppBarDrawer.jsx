@@ -24,6 +24,8 @@ import CodeIcon from '@mui/icons-material/Code';
 import BuildIcon from '@mui/icons-material/Build';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import AnimatedTyping from '../AnimatedTyping/AnimatedTyping';
+import AvatarPerfil from '../AvatarPerfil/AvatarPerfil';
+import ApresentacaoComFoto from '../ApresentacaoComFoto/ApresentacaoComFoto';
 
 const drawerWidth = 280;
 
@@ -121,11 +123,7 @@ export default function PersistentDrawerLeft() {
       >
         <DrawerHeader>
           <ProfileBox>
-            <Avatar
-              alt="Glauberty Chagas"
-              src="https://avatars.githubusercontent.com/u/12345678?v=4" // coloque sua foto real aqui
-              sx={{ width: 90, height: 90, mb: 1 }}
-            />
+            <AvatarPerfil/>
             <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
               Glauberty Chagas
             </Typography>
@@ -157,6 +155,7 @@ export default function PersistentDrawerLeft() {
   <DrawerHeader />
   <Typography paragraph>
     <AnimatedTyping/>
+    <ApresentacaoComFoto/>
   </Typography>
 </Main>
 
