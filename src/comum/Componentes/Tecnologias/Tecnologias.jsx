@@ -1,6 +1,12 @@
 import React from "react";
 import { Box, Typography, Avatar, Tooltip, Container } from "@mui/material";
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaGitAlt,
+} from "react-icons/fa";
 import { SiJavascript, SiMysql } from "react-icons/si";
 
 const techStack = [
@@ -18,18 +24,17 @@ const TechStackStylish = () => {
     <Container
       maxWidth="lg"
       sx={{
-        mt: { xs: 2, sm: 3, md: 5 }, 
+        mt: { xs: 2, sm: 3, md: 5 },
         mb: { xs: 4, sm: 5 },
       }}
     >
       <Box
         sx={{
-          py: { xs: 5, sm: 7 }, 
+          py: { xs: 5, sm: 7 },
           px: { xs: 2, sm: 4 },
-          backgroundColor: "rgba(10, 25, 47, 0.4)", // fundo semi-transparente
+          backgroundColor: "transparent", // 🔹 sem cor, deixa só o fundo do HTML
           borderRadius: 4,
-          backdropFilter: "blur(8px)", // desfoca o que está atrás
-          boxShadow: "0 12px 40px rgba(0,255,204,0.2)",
+          boxShadow: "none", // 🔹 remove sombra (opcional)
           textAlign: "center",
           transition: "all 0.3s ease",
         }}
@@ -44,7 +49,7 @@ const TechStackStylish = () => {
             textShadow: "2px 2px 8px rgba(0,0,0,0.5)",
           }}
         >
-          Software Development Student | Front-End & Back-End
+          Software Development Student
         </Typography>
 
         <Typography
@@ -56,8 +61,9 @@ const TechStackStylish = () => {
             lineHeight: 1.6,
           }}
         >
-          Apaixonado por criar soluções completas, combinando frontend, backend e banco de dados.
-          Aqui estão algumas das tecnologias que utilizo no meu dia a dia:
+          Apaixonado por criar soluções completas, combinando frontend, backend
+          e banco de dados. Aqui estão algumas das tecnologias que utilizo no
+          meu dia a dia:
         </Typography>
 
         {/* Stack de tecnologias */}
